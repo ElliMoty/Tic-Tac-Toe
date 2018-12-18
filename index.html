@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- home page -->
+    <div id="home">
+        <header>
+            <h1>Tic-Tac-Toe</h1>
+        </header>
+
+        <div class="container">
+            <img src="./images/gameLogic.jpg" alt="game-board">
+
+            <button id="start"><a>START</a></button>
+
+        </div>
+    </div>
+
+    <!-- start page -->
+    <div id="name">
+        <img src="./images/orangeTriangle.gif" alt="blue-orange gif" class="gif">
+
+        <div id="inputs">
+
+            <div class="users">
+                <input type="text" placeholder="Player#1 Name:" id="user1-name">
+                <input type="text" placeholder="Player#2 Name:" id="user2-name">
+            </div>
+
+            <div class="next">
+                <img src="./images/arrowSign.svg" alt="arrow" class="arrow inline">
+
+                <button id="white-circle" class="inline"><a id="go">GO</a></button>
+
+                <img src="./images/arrowSign.svg" alt="arrow" class="arrow inline">
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- game -->
+    <div id="game">
+
+        <div id="information">
+
+            <div class="info1">
+                <input id="name1" class="name inline" value="">
+
+                <input type="point" value="" class="point inline" id="p1">
+
+            </div>
+
+            <div class="info2">
+                <input id="name2" value="" class="name inline">
+
+                <input type="point" value="" class="point inline" id="p2">
+
+            </div>
+
+        </div>
+
+
+
+        <div id="game-board">
+            <div id="row1">
+
+                <div class="cell right bottom" id="box1">
+                </div>
+
+                <div class="cell bottom" id="box2">
+                </div>
+
+                <div class="cell left bottom" id="box3">
+                </div>
+
+            </div>
+
+
+            <div id="row2">
+
+                <div class="cell right bottom">
+                    <div class="box4"></div>
+                </div>
+                <div class="cell bottom">
+                    <div class="box5"></div>
+                </div>
+                <div class="cell left bottom">
+                    <div class="box6"></div>
+                </div>
+
+            </div>
+
+
+            <div id="row3">
+
+                <div class="cell right">
+                    <div class="box7"></div>
+                </div>
+                <div class="cell">
+                    <div class="box8"></div>
+                </div>
+                <div class="cell left">
+                    <div class="box9"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div id="gameOver-buttons">
+            <button id="restart" class="button inline">RESTART</button>
+            <button id="finish" class="button inline"><a>FINISH</a></button>
+        </div>
+
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/data1.js"></script>
+    <script src="./js/ui.js"></script>
+</body>
+
+</html>
