@@ -19,12 +19,5 @@ const game = {
 
         return { path1, path2 };
     },
-    gameBoard: ['box1', 'box2', 'box3', 'box4', 'box5', 'box6', 'box7', 'box8', 'box9'],
-    // even: function (n) {
-    //     if (n % 2 === 0) {
-    //         return true;
-    //     }
-    // },
-    score1: 0,
-    score2: 0
+    options: [['1', '2', '3'], ['4', '5', '6'], ['7', '8', '9'], ['1', '4', '7'], ['2', '5', '8'], ['3', '6', '9'], ['1', '5', '9'], ['3', '5', '7']]
 };

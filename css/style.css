@@ -164,18 +164,28 @@ background-color: #252d65;
     margin: 20px auto;
     box-shadow: 10px 10px 20px #252d65;
     border-radius: 10px;
-    position: relative;
 }
 
 .cell {
-    width: 50px;
-    height: 50px;
-    padding: 60px;
+    width: 150px;
+    height: 150px;
+    background-color: #252d65;
     margin: 0 auto;
     display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin: 15px 15px;
 }
 
-.right {
+.cell img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+}
+
+/* .right {
     border-right: 15px dashed #252d65;
 }
 
@@ -185,7 +195,7 @@ background-color: #252d65;
 
 .bottom {
     border-bottom: 15px dashed #252d65;
-}
+} */
 
 #gameOver-buttons {
     display: block;
