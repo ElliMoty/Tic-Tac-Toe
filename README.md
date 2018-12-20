@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/ElliMoty/Tic-Tac-Toe/master/images/gameLogic.jpg …" width="100" height="100"/>
+![Tic-Tac-Toe]("https://raw.githubusercontent.com/ElliMoty/Tic-Tac-Toe/master/images/gameLogic2.jpg)
 
 # Tic Tac Toe 
 > It seems to be a simple game at first glimpse but it will turn to a challenging one soon if you have a keen rival! :blush:
@@ -31,4 +31,4 @@ Open the html file in your browser.
     + Click **FINISH** button to finish the game and back to first page.
 
 **Note** Enjoy! Feedback welcome. :blush:
-   + [<img src="(https://github.com/ElliMoty/Tic-Tac-Toe/blob/master/images/twitter_image.png …" width="50" height="50"/>](https://twitter.com/ElliMotaghi)
+   + [![twitter](https://github.com/ElliMoty/Tic-Tac-Toe/blob/master/images/twitter_image.png)](https://twitter.com/ElliMotaghi)
