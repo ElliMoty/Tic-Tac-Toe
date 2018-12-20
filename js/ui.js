@@ -96,79 +96,39 @@ $(document).ready(() => {
                 }
             }
 
+            // winner part
+            let point1 = 1;
             if (winner1) {
-                $('#p1').val('1');
+                $('#p1').val(point1);
+                $('#game-board').css('display', 'none');
+                $('#winner').css('display', 'block').fadeIn(4000);
+
             }
+            point1++;
+
+
+            let point2 = 1;
             if (winner2) {
-                $('#p2').val('1');
+                $('#p2').val(point2);
+                ('#game-board').css('display', 'none');
+                $('#winner').css('display', 'block').fadeIn(4000, () => {
+                });
             }
-        };
-
-
+            point2++;
+        }
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     // restart button
     $('#restart').on('click', () => {
-        if ($('#p1').val() && $('#p2').val()) {
-            $('#p1').attr('value', 0);
-            $('#p2').attr('value', 0);
-        }
+        $('#winner').css('display', 'none').fadeOut(4000)
+        $('#game-board').css('display', 'block');
+        $('.cell').css('background-color', '#252d65');
+        $('.cell img').remove();
     });
 
     // finish button 
     $('#finish').on('click', () => {
+
         $('a').attr('href', '#home');
-
-        $('#name #user1-name').val() = '';
-        $('#name #user2-name').val() = '';
     });
-
 });
