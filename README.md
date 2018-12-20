@@ -1,4 +1,4 @@
-![Logo of the project](https://github.com/ElliMoty/Tic-Tac-Toe/blob/master/images/gameLogic.jpg=100x100)
+<img src="https://raw.githubusercontent.com/ElliMoty/Tic-Tac-Toe/master/images/gameLogic.jpg …" width="100" height="100"/>
 
 # Tic Tac Toe 
 > It seems to be a simple game at first glimpse but it will turn to a challenging one soon if you have a keen rival! :blush:
@@ -20,7 +20,8 @@ Open the html file in your browser.
     + Click **START** button to go to next level.
 
 - In the next page:
-    + Enter your names and select your preferred markers.
+    + Enter your names.
+    + At the moment the markers will be selected randomly for you but :soon: you will have more options to select yourself.
     + :soon: In near future another option to select the size of the board will be added.
     + Hit **GO** button to start the game.
 
@@ -29,5 +30,5 @@ Open the html file in your browser.
     + Hit **NEXT** to try the game again wether you win or lose.
     + Click **FINISH** button to finish the game and back to first page.
 
-**Note** Hope you find it fun enough. Feedback welcome. :blush:
-   + [![twitter](https://github.com/ElliMoty/Tic-Tac-Toe/blob/master/images/twitter_image.png=50x50)](https://twitter.com/ElliMotaghi)
+**Note** Enjoy! Feedback welcome. :blush:
+   + [<img src="(https://github.com/ElliMoty/Tic-Tac-Toe/blob/master/images/twitter_image.png …" width="50" height="50"/>](https://twitter.com/ElliMotaghi)
