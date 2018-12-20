@@ -1,4 +1,4 @@
-![Logo of the project](https://github.com/ElliMoty/Tic-Tac-Toe/blob/master/images/gameLogic.jpg/100/100)
+![Logo of the project](https://github.com/ElliMoty/Tic-Tac-Toe/blob/master/images/gameLogic.jpg =100x100)
 
 # Tic Tac Toe 
 > It seems to be a simple game at first glimpse but it will turn to a challenging one soon if you have a keen rival! :blush:
@@ -9,7 +9,7 @@ Before starting the game you need to take following steps - only once.
 
 - **Fork this repository (Tic-Tac-Toe)**
     + *'Forking' creates a personal copy of this repository on your Github account.* 
-    + Hit the **Fork** button in the top right-hand corner of this page. ![Fork Button](https://github.com/ElliMoty/Tic-Tac-Toe/blob/master/images/GitHub_Fork_Button.png/50/50)
+    + Hit the **Fork** button in the top right-hand corner of this page. ![Fork Button](https://github.com/ElliMoty/Tic-Tac-Toe/blob/master/images/GitHub_Fork_Button.png =50x50)
 
 - **Clone your forked repository to your computer**
     + *'Cloning' takes your 'forked' repository on GitHub and creates a local copy on your computer.*
@@ -38,4 +38,4 @@ Open the html file in your browser.
     + Enjoy!
 
 **Note** Hope you find it fun enough. Feedback welcome. :blush:
-   + [![twitter](https://github.com/ElliMoty/Tic-Tac-Toe/blob/master/images/twitter_image.png/50/50)](https://twitter.com/ElliMotaghi)
+   + [![twitter](https://github.com/ElliMoty/Tic-Tac-Toe/blob/master/images/twitter_image.png =50x50)](https://twitter.com/ElliMotaghi)
