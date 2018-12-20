@@ -29,7 +29,6 @@ $(document).ready(() => {
     // GO button
     $('#go').on('click', () => {
         $('a').attr('href', '#game');
-
         const name1 = $('#user1-name').val();
         const name2 = $('#user2-name').val();
 
@@ -37,6 +36,9 @@ $(document).ready(() => {
 
             $('#name1').attr('value', name1);
             $('#name2').attr('value', name2);
+
+            $('#p1').val(point1);
+            $('#p2').val(point2);
 
             $('<img id="marker1" class="sign inline">').appendTo('.info1');
             $('#marker1').attr('src', sources.path1);
@@ -49,17 +51,29 @@ $(document).ready(() => {
     // play game
 
     let click = 1;
+    let point1 = 0;
+    let point2 = 0;
     let position1 = [];
     let position2 = [];
     let winner1;
     let winner2;
 
     $('.cell').on('click', function () {
+        let $this = $(this);
+        let $thisId = $this.attr('id');
+
+        if (position1.indexOf($thisId) >= 0) {
+            return;
+        }
+
+        if (position2.indexOf($thisId) >= 0) {
+            return;
+        }
+
         if (winner1 || winner2) {
             return;
         }
 
-        let $this = $(this);
         const result = gameInfo(click, $this);
 
         $this.css('background-color', result.color);
@@ -97,38 +111,68 @@ $(document).ready(() => {
             }
 
             // winner part
-            let point1 = 1;
             if (winner1) {
+                point1++;
                 $('#p1').val(point1);
                 $('#game-board').css('display', 'none');
                 $('#winner').css('display', 'block').fadeIn(4000);
-
             }
-            point1++;
 
-
-            let point2 = 1;
             if (winner2) {
+                point2++;
                 $('#p2').val(point2);
-                ('#game-board').css('display', 'none');
-                $('#winner').css('display', 'block').fadeIn(4000, () => {
-                });
+                $('#game-board').css('display', 'none');
+                $('#winner').css('display', 'block').fadeIn(4000);
             }
-            point2++;
+        }
+
+        if (click === 9) {
+            if (!winner1 && !winner2) {
+                $('#game-board').css('display', 'none');
+                $('#loser').css('display', 'block').fadeIn(4000);
+            }
         }
     });
 
     // restart button
     $('#restart').on('click', () => {
-        $('#winner').css('display', 'none').fadeOut(4000)
+
+        if ($('#winner').css('display', 'block')) {
+            $('#winner').css('display', 'none').fadeOut(4000);
+        }
+
+        if ($('#loser').css('display', 'block')) {
+            $('#loser').css('display', 'none').fadeOut(4000);
+        }
+
         $('#game-board').css('display', 'block');
         $('.cell').css('background-color', '#252d65');
         $('.cell img').remove();
+
+        click = 1;
+        position1 = [];
+        position2 = [];
+        winner1 = false;
+        winner2 = false;
     });
 
     // finish button 
     $('#finish').on('click', () => {
-
         $('a').attr('href', '#home');
+
+        $('#user1-name').val('');
+        $('#user1-name').attr('placeholder', 'Player#1 Name:');
+        $('#user2-name').val('');
+        $('#user2-name').attr('placeholder', 'Player#2 Name:');
+
+        $('#name1').removeAttr('value');
+        $('#name2').removeAttr('value');
+
+        $('#p1').val('');
+        $('#p2').val('');
+
+        $('.info1 img').remove();
+        $('.info2 img').remove();
+
     });
 });
