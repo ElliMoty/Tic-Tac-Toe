@@ -1,4 +1,4 @@
-![Tic-Tac-Toe]("https://raw.githubusercontent.com/ElliMoty/Tic-Tac-Toe/master/images/gameLogic2.jpg)
+![Tic-Tac-Toe Logo](https://raw.githubusercontent.com/ElliMoty/Tic-Tac-Toe/master/images/gameLogic2.jpg)
 
 # Tic Tac Toe 
 > It seems to be a simple game at first glimpse but it will turn to a challenging one soon if you have a keen rival! :blush:
