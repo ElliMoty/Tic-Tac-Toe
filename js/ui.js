@@ -1,5 +1,4 @@
 // User Interface:
-
 const sources = game.src();
 
 function gameInfo(n, element) {
@@ -21,14 +20,10 @@ function gameInfo(n, element) {
 
 $(document).ready(() => {
 
-    // start button
-    $('#start').on('click', () => {
-        $('a').attr('href', '#name');
-    });
-
     // GO button
     $('#go').on('click', () => {
-        $('a').attr('href', '#game');
+
+        // $("a").css('href', '#game');
         const name1 = $('#user1-name').val();
         const name2 = $('#user2-name').val();
 
@@ -134,7 +129,7 @@ $(document).ready(() => {
         }
     });
 
-    // restart button
+    // next button
     $('#restart').on('click', () => {
 
         if ($('#winner').css('display', 'block')) {
@@ -158,7 +153,7 @@ $(document).ready(() => {
 
     // finish button 
     $('#finish').on('click', () => {
-        $('a').attr('href', '#home');
+        // $('a').attr('href', '#home');
 
         $('#user1-name').val('');
         $('#user1-name').attr('placeholder', 'Player#1 Name:');

@@ -61,14 +61,13 @@ a {
 /* users' name sec **************************************************************************/
 #name {
     width: 950px;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
 .gif {
     display: block;
     width: 550px;
     height: 520px;
-    margin-top: 70px;
     margin-bottom: 0px;
 }
 
@@ -128,13 +127,13 @@ input {
 /* game sec *******************************************************************************/
 #game {
     width: 550px;
-    margin: 60px auto;
+    margin: 0 auto;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 #information{
 width: 550px;
-margin-bottom: 30px;
+/* margin-bottom: 10px; */
 background-color: #252d65;
 border-radius: 10px;
 }
@@ -163,7 +162,7 @@ border-radius: 10px;
     background: url(../images/gameBg.jpg);
     width: 550px;
     height: 550px;
-    margin: 20px auto;
+    margin: 16px auto;
     box-shadow: 10px 10px 20px #252d65;
     border-radius: 10px;
 }
