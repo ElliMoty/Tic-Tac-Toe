@@ -5,6 +5,7 @@
 
 ## Start the game 
 Before start the game please read the below instructions.
+
 [Demo](https://tic-tac-toe-project0.herokuapp.com/)
 
 ### Instructions
