@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Anton|Bree+Serif|Lora|Righteous');
 
-/*
-font-family: 'Abril Fatface', cursive;
-font-family: 'Anton', sans-serif;
-font-family: 'Bree Serif', serif;
-font-family: 'Lora', serif; 
-font-family: 'Righteous', cursive;
-font-family: 'Acme', sans-serif;
-*/
-
-
-/* Tic Tac Toe Project *********************************************************************/
+/* Tic Tac Toe Project ******************************************************************/
 body {
     padding: 0;
     margin: 0;
@@ -18,7 +8,7 @@ body {
     font-family:'Lora', serif;
 }
 
-/* home sec ******************************************************************************/
+/* home page ******************************************************************************/
 .container {
     width: 950px;
     margin: 0 auto;
@@ -58,7 +48,7 @@ a {
     text-decoration: none;
 }
 
-/* users' name sec **************************************************************************/
+/* users' name page **************************************************************************/
 #name {
     width: 950px;
     margin: 0 auto;
@@ -124,7 +114,7 @@ input {
 }
 
 
-/* game sec *******************************************************************************/
+/* game page *******************************************************************************/
 #game {
     width: 550px;
     margin: 0 auto;
@@ -214,4 +204,8 @@ border-radius: 10px;
     letter-spacing: 0.2px;
     color: #252d65;
     margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    
 }
